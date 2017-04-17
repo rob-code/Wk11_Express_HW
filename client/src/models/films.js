@@ -9,6 +9,14 @@ var Films = function(){
     author: "Val"
   });
 
+  var review3 = new Review({
+    comment: "Its all bollocks! I want my life back.",
+    rating: 50,
+    author: "Graeme"
+  });
+
+  
+
   var review2 = new Review({
     comment: "Pew pew pew lightsabers space cowboys whoot what's not to love",
     rating: 100,
@@ -17,16 +25,20 @@ var Films = function(){
 
   var film1 = new Film({
     title: "Now You See Me",
-    actors: ["Woody Harrelson", "Jesse Eisenberg"]
+    actors: ["Woody Harrelson", "Jesse Eisenberg"],
+    genre: "Drama"
   });
 
   var film2 = new Film({
     title: "Star Wars Episode IV: A New Hope",
-    actors: ["Harrison Ford", "Alec Guiness"]
+    actors: ["Harrison Ford", "Alec Guiness"],
+    genre: "Sci Fi"
   });
 
   film1.addReview(review1);
   film2.addReview(review2);
+  film2.addReview(review3)
+
 
   return [film1, film2];
 }
